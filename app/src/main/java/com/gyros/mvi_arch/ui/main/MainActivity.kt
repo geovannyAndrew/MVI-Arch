@@ -1,7 +1,8 @@
-package com.gyros.mvi_arch
+package com.gyros.mvi_arch.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.gyros.mvi_arch.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,8 +16,8 @@ class MainActivity : AppCompatActivity() {
      * This is because is just one fragment, besides it's a simple app
      * normally I'd do this with navigation component, which is more powerfull
      */
-    fun showMainFragment(){
+    fun showMainFragment() {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container,MainFragment(),"Main Fragment")
+            .replace(R.id.fragment_container, MainFragment(), "Main Fragment")
     }
 }
